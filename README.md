@@ -1,41 +1,47 @@
-Debounce Search Component
-Description
+Debounce Search Component:
+
+Description:
+
 This is a simple React component that demonstrates the concept of debouncing user input in a search bar. Instead of filtering the list on every keystroke, it waits for the user to stop typing for a short period (500ms) before performing the search. This improves performance and avoids unnecessary computations.
 
-Features
-React functional component using useState and useEffect.
+Features:
 
-Debounced filtering logic using setTimeout and clearTimeout.
+1. React functional component using useState and useEffect.
 
-Case-insensitive search.
+2. Debounced filtering logic using setTimeout and clearTimeout.
 
-Clean and minimal UI for demonstration.
+3. Case-insensitive search.
+
+4. Clean and minimal UI for demonstration.
 
 How It Works
-User types into the input field.
 
-The searchInput state is updated.
+1. User types into the input field.
 
-A setTimeout of 500ms is set to wait before applying the filter.
+2. The searchInput state is updated.
 
-If the user types again within 500ms, the previous timeout is cleared (clearTimeout), restarting the debounce timer.
+3. A setTimeout of 500ms is set to wait before applying the filter.
 
-Once the timer completes and no new input is detected, the component filters userList based on the input.
+4. If the user types again within 500ms, the previous timeout is cleared (clearTimeout), restarting the debounce timer.
 
-Matching results are displayed as a list.
+5. Once the timer completes and no new input is detected, the component filters userList based on the input.
+
+6. Matching results are displayed as a list.
 
 Use Cases
-Typeahead search bars
 
-Live filtering of lists or tables
+1. Typeahead search bars
 
-Optimizing API calls based on user input
+2. Live filtering of lists or tables
+
+3. Optimizing API calls based on user input
 
 Future Enhancements
-Add API call instead of static list
 
-Highlight matching text in results
+1. Add API call instead of static list
 
-Add loading indicator during debounce delay
+2. Highlight matching text in results
 
-Use a custom debounce hook for reusabilit
+3. Add loading indicator during debounce delay
+
+4. Use a custom debounce hook for reusabilit
